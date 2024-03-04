@@ -10,7 +10,7 @@ def convertir_numero_a_palabra(numero):
             palabra = num2words(numero, lang='es')
             return palabra
         elif isinstance(numero, float):  
-            parte_entera,parte_decimal = ("{:.1f}").format(numero).split('.')
+            parte_entera,parte_decimal = ("{:.2f}").format(numero).split('.')
             parte_entera_palabra = num2words(int(parte_entera), lang='es')
             parte_decimal_palabra = num2words(int(parte_decimal), lang='es')
             return parte_entera_palabra + " punto " + parte_decimal_palabra
