@@ -1,12 +1,12 @@
 def BubbleSort(a):
-    n = len(arreglo)
+    n = len(a)
 
     for i in range(n-1): 
         for j in range(n-1-i): 
-            if arreglo[j] > arreglo[j+1]:
-                arreglo[j], arreglo[j+1] = arreglo[j+1], arreglo[j]
+            if a[j] > a[j+1]:
+                a[j], a[j+1] = a[j+1], a[j]
 
 a = [5, 2, 1, 15, 0]
-BubbleSort(arreglo)
+BubbleSort(a)
 
-print(arreglo)
+print(a)
